@@ -1,33 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
+import Card from './card'
 import './App.css'
-
+import Header from './header'
 function App() {
-  const [count, setCount] = useState(0)
+  // const [data, setData] = useState(0)
+
+  // var url = '';
+  // useEffect(() => {
+  //   fetch(url)
+  //     .then(response => {
+  //       return response.json();
+  //     }).then((data => {
+  //       setData(data);
+  //       console.log(data);
+  //     }))
+  //   }, [])
+
+  var labels = ['What to cook', 'Recipes', 'Ingredients','Occasions','About Us']
+  var obj  = [{
+    name: 'React',
+    url: './img/a.png',
+    description: 'A JavaScript library for building user interfaces'
+  }, {
+    name: 'Vite',
+    url: './img/b.png',
+    description: 'Next generation frontend tooling'
+  }, {
+    name: 'Tailwind CSS',
+    url: './img/c.png',
+    description: 'A utility-first CSS framework for rapid UI development'
+  }]
+  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header labels = {labels}></Header>
+      <Card items={obj}></Card>
+
     </>
   )
 }
