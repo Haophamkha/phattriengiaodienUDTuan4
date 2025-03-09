@@ -1,12 +1,95 @@
-img{
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 40px;
+    position: relative;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    color: #ff69b4;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    width: 150px;
+  }
+  
+  .nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+  
+  .nav-item {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .recipe-box-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .recipe-box-button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px; /* Tăng padding ngang để rộng hơn */
+    font-size: 12px;
+    cursor: pointer;
+    height: 30px;
+    min-width: 120px; /* Đặt chiều rộng tối thiểu để nút rộng hơn */
+    display: inline-flex; /* Đảm bảo nút inline với avatar */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin: 10px;
-}
-#TenWeb{
-    color: rgb(217, 73, 97); font-weight: bold; margin-left: 10px;
-}
-.tenNhan{
-    color: rgb(217, 73, 97); 
-}
+  }

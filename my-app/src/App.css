@@ -61,4 +61,16 @@ li:hover {
   background-color: #d0e1f9; 
 }
 
+.menucon{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+
+}
+.menucon h2{
+  font-size: 18px;
+}
+
+
+
   
